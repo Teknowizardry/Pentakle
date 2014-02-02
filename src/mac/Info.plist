@@ -15,7 +15,7 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>© Pentakle</string>
 	<key>CFBundleSignature</key>
-	<string>PEN</string>
+	<string>PNT</string>
 	<key>CFBundleExecutable</key>
 	<string>Pentakle-Qt</string>
 	<key>CFBundleIdentifier</key>

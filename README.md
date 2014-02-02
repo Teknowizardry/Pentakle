@@ -1,4 +1,4 @@
-# Pentakle [PEN,✪]
+# Pentakle [⍟,PNT,✪]
 http://pentakle.tk/
 
 ![Pentakle](http://s2.postimg.org/sgmdoqv0p/wiccan_white_pentagram_117134.jpg)
@@ -29,14 +29,14 @@ their feature or bug fix is ready.
 ## Frequently Asked Questions
 
 ### How many Pentakles can exist?
-When the Pentakle reward reaches its minimum payout, 7,339,769,856 Pentakles will have been uncovered. After that, the network will continue to produce 3 PEN per mined block.
+When the Pentakle reward reaches its minimum payout, ⍟7,339,769,856 will have been uncovered. After that, the network will continue to produce ⍟3 per mined block.
 
 ### How do I get Pentakles?
 Scrypt Proof of Work (Like Litecoin and Dogecoin)
 
 9 Minute Block Targets, 108 Minute Diff Readjustments
 
-Block rewards start at 393,216 Pentakles and halve every 9,333 blocks until reaching a minimum 3 Pentakle block reward.
+Block rewards start at ⍟393,216 and halve every 9,333 blocks until reaching a minimum ⍟3 block reward.
 
 ### How do I make pentakled?
 On GNU-Linux or Unix:
