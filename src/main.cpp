@@ -1651,7 +1651,7 @@ bool CBlock::ConnectBlock(CValidationState &state, CBlockIndex* pindex, CCoinsVi
 
     // Special case for the genesis block, skipping connection of its transactions
     // (its coinbase is unspendable)
-    if (GetHash() == hashGenesisBlock) {
+    if (GetHash() == hashGenesisBlock || (fTestNet && pindex->nHeight == 0)) {
         view.SetBestBlock(pindex);
         pindexGenesisBlock = pindex;
         return true;
@@ -1767,7 +1767,7 @@ bool CBlock::ConnectBlock(CValidationState &state, CBlockIndex* pindex, CCoinsVi
             CDiskBlockPos pos;
             if (!FindUndoPos(state, pindex->nFile, pos, ::GetSerializeSize(blockundo, SER_DISK, CLIENT_VERSION) + 40))
                 return error("ConnectBlock() : FindUndoPos failed");
-            if (!blockundo.WriteToDisk(pos, pindex->pprev->GetBlockHash()))
+            if (pindex->pprev && !blockundo.WriteToDisk(pos, pindex->pprev->GetBlockHash()))
                 return state.Abort(_("Failed to write undo data"));
 
             // update nUndoPos in block index
@@ -2821,8 +2821,37 @@ bool InitBlockIndex() {
         printf("hashMerkleRoot: %s\n", block.hashMerkleRoot.ToString().c_str());
         assert(block.hashMerkleRoot == uint256("0x"));
         block.print();
-        assert(hash == hashGenesisBlock);
-
+        //assert(hash == hashGenesisBlock);
+		 if (block.GetHash() != hashGenesisBlock)
+ 	{
+             printf("Searching for genesis block...\n");
+             // This will figure out a valid hash and Nonce if you're
+             // creating a different genesis block:
+             uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
+             uint256 thash;
+             char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
+ 
+             loop
+             {
+                 scrypt_1024_1_1_256_sp(BEGIN(block.nVersion), BEGIN(thash), scratchpad);
+                 if (thash <= hashTarget)
+                     break;
+                 if ((block.nNonce & 0xFFF) == 0)
+                 {
+                     printf("nonce %08X: hash = %s (target = %s)\n", block.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
+                 }
+                 ++block.nNonce;
+                 if (block.nNonce == 0)
+                 {
+                     printf("NONCE WRAPPED, incrementing time\n");
+                     ++block.nTime;
+                 }
+             }
+             printf("block.nTime = %u \n", block.nTime);
+             printf("block.nNonce = %u \n", block.nNonce);
+             printf("block.GetHash = %s\n", block.GetHash().ToString().c_str());
+ 	}
+ 	
         // Start new block file
         try {
             unsigned int nBlockSize = ::GetSerializeSize(block, SER_DISK, CLIENT_VERSION);
