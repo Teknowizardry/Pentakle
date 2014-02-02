@@ -1,4 +1,4 @@
-# Pentakle [PEN, ⛥⛦] Integration/Staging Tree
+# Pentakle [PEN, ⛥⛦]
 http://pentakle.tk/
 
 ![Pentakle](http://s2.postimg.org/sgmdoqv0p/wiccan_white_pentagram_117134.jpg)
@@ -9,9 +9,13 @@ http://pentakle.tk/
 
 ## Why a pentakle/pentacle?
 ![Ace of Pentakles](http://s4.postimg.org/4uka9kmj1/coinsace.jpg)
+
 The Pentacle, a symbol of magick and Witchcraft, is a bold and fascinating statement about our place in the Universe. The pentagram represents an ancient concept that can be found in philosophical thought in both East and West. Although over 8,000 years old, the image of the pentagram is applicable in our modern world. The pentagram tells us that we have the ability to bring Spirit to Earth; this applies to every area of practical day-to-day living, as well as spiritual thought. The ability of bringing Spirit to Earth is what makes us whole.
+
 ![Pentakle Coins](http://s27.postimg.org/uugpmu0jn/RLPentagram_Coins.jpg)
+
 Furthermore, the Pentacle is a traditional symbol of wealth, increase, and coins, making it an especially appropriate symbol for a magickal cryptocurrency.
+
 We chose the spelling "Pentakle" to differentiate the cryptocurrency from other uses of the word "pentacle".
 
 ## License
