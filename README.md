@@ -1,4 +1,4 @@
-# Pentakle [PEN, ⛥⛦]
+# Pentakle [PEN,✪]
 http://pentakle.tk/
 
 ![Pentakle](http://s2.postimg.org/sgmdoqv0p/wiccan_white_pentagram_117134.jpg)
