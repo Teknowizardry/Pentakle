@@ -1,7 +1,7 @@
 # Pentakle [PEN, ⛥⛦] Integration/Staging Tree
 http://pentakle.tk/
 
-![Pentakle](http://static.tumblr.com/ppdj5y9/Ae9mxmxtp/300coin.png)
+![Pentakle]
 
 ## What is Pentakle?
 Pentakle is a cryptocurrency like Bitcoin, but based on Dogecoin and Litecoin, with a heavy dose of magick and sacred numerology.
@@ -9,6 +9,7 @@ http://pentakle.tk/
 
 ## Why a pentakle/pentacle?
 The Pentacle, a symbol of magick and Witchcraft, is a bold and fascinating statement about our place in the Universe. The pentagram represents an ancient concept that can be found in philosophical thought in both East and West. Although over 8,000 years old, the image of the pentagram is applicable in our modern world. The pentagram tells us that we have the ability to bring Spirit to Earth; this applies to every area of practical day-to-day living, as well as spiritual thought. The ability of bringing Spirit to Earth is what makes us whole.
+Furthermore, the Pentacle is a traditional symbol of wealth, increase, and coins, making it an especially appropriate symbol for a magickal cryptocurrency.
 We chose the spelling "Pentakle" to differentiate the cryptocurrency from other uses of the word "pentacle".
 
 ## License
@@ -22,7 +23,7 @@ their feature or bug fix is ready.
 ## Frequently Asked Questions
 
 ### How many Pentakles can exist?
-A total of 7,339,769,856 will eventually be uncovered.
+When the Pentakle reward reaches its minimum payout, 7,339,769,856 Pentakles will have been uncovered. After that, the network will continue to produce 3 PEN per mined block.
 
 ### How do I get Pentakles?
 Scrypt Proof of Work (Like Litecoin and Dogecoin)
@@ -45,5 +46,5 @@ On GNU-Linux or Unix:
     make -f makefile.unix USE_UPNP=1 USE_IPV6=1 USE_QRCODE=1
 
 ### What are the standard ports?
-RPC 61803
-P2P 16180
+RPC 16180
+P2P 61803
