@@ -2819,11 +2819,11 @@ bool InitBlockIndex() {
         printf("hash: %s\n", hash.ToString().c_str());
         printf("hashGenBlock: %s\n", hashGenesisBlock.ToString().c_str());
         printf("hashMerkleRoot: %s\n", block.hashMerkleRoot.ToString().c_str());
-        //assert(block.hashMerkleRoot == uint256("0x"));
+        assert(block.hashMerkleRoot == uint256("0x"));
         block.print();
         //assert(hash == hashGenesisBlock);
 		 if (block.GetHash() != hashGenesisBlock)
- 	{
+ 		{
              printf("Searching for genesis block...\n");
              // This will figure out a valid hash and Nonce if you're
              // creating a different genesis block:
