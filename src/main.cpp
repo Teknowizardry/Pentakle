@@ -2816,9 +2816,13 @@ bool InitBlockIndex() {
 
         //// debug print
         uint256 hash = block.GetHash();
-        strprintf("hash: %s\n", hash.ToString().c_str());
-        strprintf("hashGenBlock: %s\n", hashGenesisBlock.ToString().c_str());
-        strprintf("hashMerkleRoot: %s\n", block.hashMerkleRoot.ToString().c_str());
+        while (hashGenesisBlock > bnProofOfWorkLimit.getuint256()){
+ 			  if (++genesis.nNonce==0) break;
+  			 hashGenesisBlock = genesis.GetHash();
+		}
+        printf("hash: %s\n", hash.ToString().c_str());
+        printf("hashGenBlock: %s\n", hashGenesisBlock.ToString().c_str());
+        printf("hashMerkleRoot: %s\n", block.hashMerkleRoot.ToString().c_str());
         assert(block.hashMerkleRoot == uint256("0x"));
         block.print();
         //assert(hash == hashGenesisBlock);
