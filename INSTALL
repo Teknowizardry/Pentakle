@@ -1,0 +1,9 @@
+Building Pentakle
+
+See doc/readme-qt.rst for instructions on building Pentakle-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Pentakle.
+
+See doc/build-*.txt for instructions on building pentakled,
+the intended-for-services, no-graphical-interface, reference
+implementation of Pentakle.

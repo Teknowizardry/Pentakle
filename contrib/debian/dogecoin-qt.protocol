@@ -1,0 +1,11 @@
+[Protocol]
+exec=pentakle-qt '%u'
+protocol=pentakle
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
