@@ -1091,8 +1091,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
     int64_t nSubsidy = 393216 * COIN;
     int64_t nMinSubsidy = 3 * COIN;
 
-    // Subsidy is cut in half every 9,333 blocks which will occur approximately every .
-    nSubsidy >>= (nHeight / Params().SubsidyHalvingInterval());
+    // Subsidy is cut in half every 9,333 blocks
+    nSubsidy >>= (nHeight / 9333);
 
 	if (nSubsidy < nMinSubsidy)
     {
