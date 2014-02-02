@@ -2785,7 +2785,7 @@ bool InitBlockIndex() {
     // Only add the genesis block if not reindexing (in which case we reuse the one already on disk)
     if (!fReindex) {
         // Genesis Block:
-        // CBlock(hash=1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691, input=010000000000000000000000000000000000000000000000000000000000000000000000696ad20e2dd4365c7459b4a4a5af743d5e92c6da3229e6532cd605f6533f2a5b24a6a152f0ff0f1e67860100, PoW=0000026f3f7874ca0c251314eaed2d2fcf83d7da3acfaacf59417d485310b448, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=5b2a3f53f605d62c53e62932dac6925e3d74afa5a4b459745c36d42d0ed26a69, nTime=1386325540, nBits=1e0ffff0, nNonce=99943, vtx=1)
+        // CBlock(hash=1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691, input=010000000000000000000000000000000000000000000000000000000000000000000000696ad20e2dd4365c7459b4a4a5af743d5e92c6da3229e6532cd605f6533f2a5b24a6a152f0ff0f1e67860100, PoW=0000026f3f7874ca0c251314eaed2d2fcf83d7da3acfaacf59417d485310b448, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=c2fb0f9525beddc71c730d878a4a0e8717a99f6dfb8e3b1945938a6e942803a2, nTime=1386325540, nBits=1e0ffff0, nNonce=99943, vtx=1)
         //   CTransaction(hash=5b2a3f53f605d62c53e62932dac6925e3d74afa5a4b459745c36d42d0ed26a69, ver=1, vin.size=1, vout.size=1, nLockTime=0)
         //    CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 04ffff001d0104084e696e746f6e646f)
         //    CTxOut(nValue=88.00000000, scriptPubKey=040184710fa689ad5023690c80f3a4)
@@ -2821,7 +2821,7 @@ bool InitBlockIndex() {
         printf("hashGenBlock: %s\n", hashGenesisBlock.ToString().c_str());
         printf("hashMerkleRoot: %s\n", block.hashMerkleRoot.ToString().c_str());
         
-        assert(block.hashMerkleRoot == uint256("0x"));
+        assert(block.hashMerkleRoot == uint256("0xc2fb0f9525beddc71c730d878a4a0e8717a99f6dfb8e3b1945938a6e942803a2"));
         block.print();
         //assert(hash == hashGenesisBlock);
 		 if (block.GetHash() != hashGenesisBlock)
