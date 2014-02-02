@@ -93,7 +93,7 @@
        <property name="text">
         <string notr="true">Copyright &amp;copy; 2009-YYYY The Bitcoin developers
 Copyright &amp;copy; 2011-YYYY The Litecoin developers
-Copyright &amp;copy; 2013 Pentakle Developers</string>
+Copyright &amp;copy; 2014 Pentakle Developers</string>
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>
@@ -110,7 +110,7 @@ Copyright &amp;copy; 2013 Pentakle Developers</string>
        </property>
        <property name="text">
         <string>
-This is experimental software. Learn more at pentakle.com
+This is experimental software. Learn more at pentakle.tk
 
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
